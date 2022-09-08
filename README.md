@@ -9,14 +9,14 @@ This plugin temp bans a player on death for a configurable period of time.
 *  Optional sound effects
 
 ### Commands
-| Command                            | Description                                          |
-|------------------------------------|------------------------------------------------------|
-| /deathban&nbsp;reload              | Reloads configuration file and messages              |
-| /deathban&nbsp;status              | Displays version info and some config settings       |
-| /deathban&nbsp;help&nbsp;[command] | Displays a brief help message and command usage      |
-| /banlist                           | Server provided command to list current bans         |
-| /unban [player name]               | Server provided command to unban a player by name    |
-| /unbanip [player ip address]       | Server provided command to unban a player IP address |
+| Command                              | Description                                          |
+|--------------------------------------|------------------------------------------------------|
+| /deathban&nbsp;reload                | Reloads configuration file and messages              |
+| /deathban&nbsp;status                | Displays version info and some config settings       |
+| /deathban&nbsp;help&nbsp;\[command\] | Displays a brief help message and command usage      |
+| /banlist                             | Server provided command to list current bans         |
+| /unban \[player name\]               | Server provided command to unban a player by name    |
+| /unbanip \[player ip address\]       | Server provided command to unban a player IP address |
 
 ### Permissions
 | Permission      | Description                                                | Default |
