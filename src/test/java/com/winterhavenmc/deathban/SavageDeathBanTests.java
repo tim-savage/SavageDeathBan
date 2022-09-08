@@ -58,13 +58,13 @@ public class SavageDeathBanTests {
 
 		@Test
 		@DisplayName("mock server not null.")
-		void MockServerNotNull() {
+		void mockServerNotNull() {
 			Assertions.assertNotNull(server);
 		}
 
 		@Test
 		@DisplayName("mock plugin not null.")
-		void MockPluginNotNull() {
+		void mockPluginNotNull() {
 			Assertions.assertNotNull(plugin);
 		}
 	}
@@ -75,19 +75,19 @@ public class SavageDeathBanTests {
 	class PluginTests {
 		@Test
 		@DisplayName("language manager not null.")
-		void LanguageManagerNotNull() {
+		void languageManagerNotNull() {
 			Assertions.assertNotNull(plugin.messageBuilder);
 		}
 
 		@Test
 		@DisplayName("world manager not null.")
-		void WorldManagerNotNull() {
+		void worldManagerNotNull() {
 			Assertions.assertNotNull(plugin.worldManager);
 		}
 
 		@Test
 		@DisplayName("sound config not null.")
-		void SoundConfigNotNull() {
+		void soundConfigNotNull() {
 			Assertions.assertNotNull(plugin.soundConfig);
 		}
 	}
@@ -109,26 +109,26 @@ public class SavageDeathBanTests {
 
 		@Test
 		@DisplayName("config not null.")
-		void ConfigNotNull() {
+		void configNotNull() {
 			Assertions.assertNotNull(config);
 		}
 
 		@Test
 		@DisplayName("test configured language.")
-		void GetLanguage() {
+		void getLanguage() {
 			Assertions.assertEquals("en-US", config.getString("language"),
 					"configured language does not match en-US");
 		}
 
 		@SuppressWarnings("unused")
-		Set<String> ConfigFileKeys() {
+		Set<String> configFileKeys() {
 			return plugin.getConfig().getKeys(false);
 		}
 
 		@ParameterizedTest
 		@DisplayName("file config key is contained in ConfigSetting enum.")
-		@MethodSource("ConfigFileKeys")
-		void ConfigFileKeyNotNull(String key) {
+		@MethodSource("configFileKeys")
+		void configFileKeyNotNull(String key) {
 			Assertions.assertNotNull(key);
 			Assertions.assertTrue(enumConfigKeyStrings.contains(key),
 					"file config key is not contained in ConfigSetting enum.");
@@ -137,7 +137,7 @@ public class SavageDeathBanTests {
 		@ParameterizedTest
 		@EnumSource(ConfigSetting.class)
 		@DisplayName("ConfigSetting enum matches config file key/value pairs.")
-		void ConfigFileKeysContainsEnumKey(ConfigSetting configSetting) {
+		void configFileKeysContainsEnumKey(ConfigSetting configSetting) {
 			Assertions.assertEquals(configSetting.getValue(), plugin.getConfig().getString(configSetting.getKey()));
 		}
 	}
