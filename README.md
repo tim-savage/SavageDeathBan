@@ -1,17 +1,14 @@
-### Description:
-
+### Description
 This plugin temp bans a player on death for a configurable period of time.
 
-### Features:
+### Features
+*  Ban a player and optionally ban their IP address for a configurable amount of time
+*  Integrates with the Bukkit ban system, defers to built in commands to view ban list or unban player/ip
+*  Per world enabled in configuration
+*  Customizable messages and language localization
+*  Optional sound effects
 
-* Ban a player and optionally ban their IP address for a configurable amount of time
-* Integrates with the Bukkit ban system, defers to built in commands to view ban list or unban player/ip
-* Per world enabled in configuration
-* Customizable messages and language localization
-* Optional sound effects
-
-### Commands:
-
+### Commands
 | Command                            | Description                                          |
 |------------------------------------|------------------------------------------------------|
 | /deathban&nbsp;reload              | Reloads configuration file and messages              |
@@ -21,8 +18,7 @@ This plugin temp bans a player on death for a configurable period of time.
 | /unban [player name]               | Server provided command to unban a player by name    |
 | /unbanip [player ip address]       | Server provided command to unban a player IP address |
 
-### Permissions:
-
+### Permissions
 | Permission      | Description                                                | Default |
 |-----------------|------------------------------------------------------------|---------|
 | deathban.admin  | Administrator permission, grants all following permissions | op      |
