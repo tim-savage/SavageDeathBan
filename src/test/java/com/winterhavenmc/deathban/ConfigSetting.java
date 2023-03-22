@@ -28,6 +28,7 @@ public enum ConfigSetting {
     KICK_DELAY("1"),
     LOG_BANS("true"),
     SOUND_EFFECTS("true"),
+    BAN_REASON("SavageDeathBan")
     ;
 
     private final String value;
