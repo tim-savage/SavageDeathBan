@@ -1,4 +1,6 @@
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/65b98809695045ebb0596b1ebcf9f836)](https://www.codacy.com/gh/tim-savage/SavageDeathBan/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tim-savage/SavageDeathBan&amp;utm_campaign=Badge_Grade)
+### This repository has been moved to the WinterhavenMC organization.
+
+https://github.com/winterhavenmc/SavageDeathBan
 
 ### Description
 This plugin temp bans a player on death for a configurable period of time.
